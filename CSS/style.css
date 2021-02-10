@@ -43,3 +43,20 @@ h3 {
       transform: translate3d(-1440px,0, 0);
     }
   }
+
+  #Enter{
+    position:absolute;
+    border:0;
+    background: #315795;
+    margin: 5px auto;
+    padding-top: 0.4em;
+    text-align:center;
+    font-weight: bold;
+    width:20em;
+    outline:none;
+    border-radius:100px;
+    color: white;
+}
+#Enter:hover{
+  background: #1A3663;
+}
