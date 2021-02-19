@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#chestclosed").mouseenter(function(){
+            $("#chestclosed").hide();
+          });
+        });
+    </script>
 </head>
 
 <body>
@@ -37,7 +45,7 @@
         <div class="sliding-background"></div>
     </div>
     <section style="background: #1A3663;padding-bottom:10%"></section>
-    <section style="background: #1A3663;padding-bottom:80%">
+    <section style="background: #1A3663;padding-bottom:90%">
         <div style="float: left;padding-bottom:5%;">
             <img class="mobileimg" src="Images/leafleft.png">
        </div>
@@ -55,42 +63,12 @@
         <div style="float: right;">">
             <img class="mobileimg" src="Images/leafright.png">
         </div>
+        <section style="background: #1A3663;padding-bottom:40%">
+            <div class="chests" style="background: #1A3663;">
+                <a href="secret-bookshelf.html"><img src="Images/chestopen.png" style="position:absolute;margin-top: 30em;"/></a>
+                <img src="Images/chestclosed.png" id="chestclosed" style="position:absolute;max-width: 100%;margin-top: 30em;"/>
+            </div>
+        </section>
     </section>
-    <!-- <section style="background: #1A3663;padding-bottom:20%">
-        <div class="container" style = "padding:0;">
-            <div class="row">
-                <div class="col-lg-4 m-auto">
-                    <img class="mobileimg" src="Images/leafleft.png">
-                </div>
-                <div class="col-lg-4 m-auto" style= "text-align:center;"></div>
-                    <h3>
-                    “I am the shore and the ocean, awaiting myself on both sides.” 
-                    </h3>
-                    <br>
-                    <h3>
-                        ― Dejan Stojanovic
-                    </h3>
-                </div>
-                <div class="col-lg-4 m-auto" style = "padding:0;">
-                    <img class="mobileimg" src="Images/leafright.png">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section style="background: #FFFFFF; padding: 5%;">
-    <div class="container">
-            <div class="row">
-                <div class="col-lg-6 m-auto">
-                    <a href="HTML/beach.html">
-                    <img alt="Beach" src="https://cdn.dribbble.com/users/466099/screenshots/13394224/media/e484e89ef6d687ef7127d4094ac461de.png?compress=1&resize=1600x1200"
-                    width=90%>
-                </div>
-                <div class="col-lg-6 m-auto">
-                    <a href="HTML/sunken-ship.html">
-                    <img alt="Beach" src="https://cdn.dribbble.com/users/466099/screenshots/6476882/selfish__2_dribbble.jpg?compress=1&resize=800x600"
-                    width=90%>
-                </div>
-            </div>
-        </div>
-`   </section> -->
 </body>
+</html>

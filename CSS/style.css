@@ -45,18 +45,36 @@ h3 {
   }
 
   #Enter{
-    position:absolute;
     border:0;
     background: #315795;
-    margin: 5px;
     padding-top: 0.4em;
     text-align:center;
-    font-weight: bold;
     width:20em;
     outline:none;
     border-radius:100px;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 #Enter:hover{
   background: #1A3663;
+}
+
+#Button{
+  border:0;
+  background: #315795;
+  margin: 4px;
+  padding: 0.4em 0em 0em 0em;
+  text-align:center;
+  width:20em;
+  outline:none;
+  border-radius:100px;
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+#Button:hover{
+background: #1A3663;
 }
