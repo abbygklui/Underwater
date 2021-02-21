@@ -78,3 +78,21 @@ h3 {
 #Button:hover{
 background: #1A3663;
 }
+
+#Button2{
+  border:0;
+  background: #315795;
+  margin: 4px;
+  padding: 0.4em 0em 0em 0em;
+  text-align:center;
+  width:20em;
+  outline:none;
+  border-radius:100px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+#Button2:hover{
+background: #ccd7e9;
+}
