@@ -4,3 +4,38 @@
     margin-right: auto;
     width: 25%;
   }
+
+@media  (max-width : 1024px) {
+  #fish{
+position:absolute;
+margin-top: 50%;max-width: 50%;
+}
+#fishclosed{
+position:absolute;
+margin-top: 50%;max-width: 50%;
+}
+#chest{
+position:absolute;
+max-width: 50%;
+}
+#chestclosed{
+position:absolute;
+max-width: 50%;
+}
+.ships {
+margin-top: 20%;
+}
+#ship {
+margin-top: 10%;
+}
+#shiphover {
+margin-top: 10%;
+}
+}
+
+@media (min-width : 1024px) {
+.fishes{
+  position:absolute;margin-top: 45%;width: 40%;left: 10%;
+}
+
+}

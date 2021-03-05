@@ -18,6 +18,40 @@
             $("#chestclosed").hide();
           });
         });
+
+        $(document).ready(function(){
+          $("#fishclosed").mouseenter(function(){
+            $("#fishclosed").hide();
+          });
+        });
+        $(document).ready(function(){
+          $("#ship").mouseenter(function(){
+            $("#shiphover").show();
+          });
+        });
+
+        $(document).ready(function(){
+          $("#chest").mouseleave(function(){
+            $("#chestclosed").show();
+          });
+        });
+
+        $(document).ready(function(){
+          $("#fish").mouseleave(function(){
+            $("#fishclosed").show();
+          });
+        });
+        $(document).ready(function(){
+          $("#shiphover").mouseleave(function(){
+            $("#shiphover").hide();
+          });
+        });
+
+        $(document).ready(function(){
+          $("#shiphover").hide();
+        });
+
+
     </script>
 </head>
 
@@ -60,21 +94,24 @@
                 </h3>
             </div>
         </div>
-        <div style="float: right;">">
+        <div style="float: right;">
             <img class="mobileimg" src="Images/leafright.png">
         </div>
-        <section style="background: #1A3663;padding-bottom:40%">
-            <h3 style="margin-top: 20em;text-align: center;margin-bottom: 3em;">Hover on the chest below!</h3>
+        <section style="background: #1A3663;padding-bottom:90%;margin-top: 30em;">
             <div class="chests" style="background: #1A3663;">
-                <a href="secret-bookshelf.html"><img src="Images/chestopen.png" style="position:absolute;"/></a>
-                <img src="Images/chestclosed.png" id="chestclosed" style="position:absolute;max-width: 100%;"/>
+                <a href="secret-bookshelf.html"><img src="Images/chestopen.png" id="chest" style="position:absolute;"/></a>
+                <img src="Images/chestclosed.png" id="chestclosed" style="position:absolute;"/>
+            </div>
+            <div class="fishes">
+                <a href="Door.html"><img src="Images/Fishbuttonhover.png" id="fish" style="position:absolute;"/></a>
+                <img src="Images/Fishbutton.png" id="fishclosed" style="position:absolute;"/>
             </div>
         </section>
-        <div id="ship" style="margin-top: 40%;">
+        <div id="ships" >
+            <img src="Images/Ship.png" id="ship" style="width: 100%;position: absolute;"/>
             <a href="sunken-ship.html">   
-                <button id="Button2" style="padding-top: 0.5em;display: block;margin-left: auto;margin-right: auto;width: 50%;margin-bottom: 10%; background-color:white; color: #1A3663;"><h4>Enter The Ship</h4></button> 
+                <img src="Images/shipclicked.png" id="shiphover" style="width: 100%;position: absolute;z-index: 10;"/>
             </a>
-            <img src="Images/Ship.png" id="ship" style="float:left;max-width: 100%;"/>
         </div>
     </section>
 </body>

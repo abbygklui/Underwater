@@ -8,113 +8,701 @@
     <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
 </head>
 <style>
-    .triangle-left {
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 75px solid transparent;
-        border-right: 75px solid transparent;
-        border-bottom: 150px solid #1A3663;
-        border-radius: 50%;
-        transform: rotate(165deg);
-        margin-left:6%;
-        margin-top: 100px;
-        margin-left: 50px;
+    .sun {
+    	position:absolute; left: 1100px; bottom: 760px;
+		width: 300px;
+		height: 300px;
+		background: #f7f387;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .sun1 {
+    	position:absolute; left: 950px; bottom: 870px;
+		width: 100px;
+		height: 60px;
+		background: #f7f387;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .sun2 {
+    	position:absolute; left: 1450px; bottom: 870px;
+		width: 100px;
+		height: 60px;
+		background: #f7f387;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .sun3 {
+    	position:absolute; left: 1200px; bottom: 620px;
+		width: 100px;
+		height: 60px;
+		background: #f7f387;
+		border-radius: 50%;
+		z-index: -1; 
+        transform: rotate(90deg);
+    	}
+        .sun4 {
+    	position:absolute; left: 1390px; bottom: 680px;
+		width: 100px;
+		height: 60px;
+		background: #f7f387;
+		border-radius: 50%;
+		z-index: -1; 
+        transform: rotate(45deg);
+    	}
+        .sun5 {
+    	position:absolute; left: 1000px; bottom: 680px;
+		width: 100px;
+		height: 60px;
+		background: #f7f387;
+		border-radius: 50%;
+		z-index: -1; 
+        transform: rotate(-45deg);
+    	}
+
+        .head {
+    	position:absolute; 
+        left: 200px; 
+        bottom: 150px;
+		width: 300px;
+		height: 360px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -8; 
+    	}
+        .neck {
+    	position:absolute; 
+        left: 310px; 
+        bottom: 100px;
+		width: 80px;
+		height: 100px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 10%;
+		z-index: -9; 
+    	}
+        .ear1 {
+    	position:absolute; 
+        left: 160px; 
+        bottom: 250px;
+		width: 100px;
+		height: 100px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -9; 
+    	}
+        .ear2 {
+    	position:absolute; 
+        left: 440px; 
+        bottom: 250px;
+		width: 100px;
+		height: 100px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -9; 
+    	}
+        .hair1 {
+            position:absolute; 
+        left: 190px; 
+        bottom: 400px;
+        width: 340px;
+        height: 180px;
+        background-color: #61FF83;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 8px solid #1A3663;
+        border-bottom: 10;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        z-index: -2; 
+        }
+        .hair2 {
+            position:absolute; 
+        left: 100px; 
+        bottom: 400px;
+        width: 140px;
+        height: 30px;
+        background-color: #61FF83;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 8px solid #1A3663;
+        border-bottom: 10;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        z-index: -3; 
+        }
+
+        .glasses1 {
+    	position:absolute; 
+        left: 200px; 
+        bottom: 270px;
+		width: 120px;
+		height: 120px;
+		background: #9ACEFF;
+        border: 13px solid #F67676;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .glasses2 {
+    	position:absolute; 
+        left: 370px; 
+        bottom: 270px;
+		width: 120px;
+		height: 120px;
+		background: #9ACEFF;
+        border: 13px solid #F67676;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .glasses3 {
+    	position:absolute; 
+        left: 340px; 
+        bottom: 330px;
+		width: 40px;
+		height: 20px;
+		background: #F67676;
+		border-radius: 10%;
+    	}
+        .smile {
+        position:absolute; 
+        left: 310px; 
+        bottom: 180px;
+        width: 100px;
+        height: 50px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+        border: 10px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        transform: rotate(180deg);
+    	}
+        .nose {
+    	position:absolute; 
+        left: 350px; 
+        bottom: 275px;
+		width: 15px;
+		height: 30px;
+		background: #61FF83;
+		border-radius: 29%;
+		z-index: -1; 
+    	}
+        .body {
+        position:absolute; 
+        left: 104px; 
+        bottom: 0px;
+        width: 500px;
+        height: 120px;
+        background-color: #FFFEE5;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border: 8px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+}
+
+
+
+
+.head1 {
+    	position:absolute; 
+        left: 695px; 
+        bottom: 100px;
+		width: 280px;
+		height: 290px;
+		background: #e9ddc7;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -8; 
+    	}
+        .neck1 {
+    	position:absolute; 
+        left: 790px; 
+        bottom: 60px;
+		width: 80px;
+		height: 100px;
+		background: #e9ddc7;
+        border: 8px solid #1A3663;
+		border-radius: 10%;
+		z-index: -9; 
+    	}
+        .ear11 {
+    	position:absolute; 
+        left: 640px; 
+        bottom: 170px;
+		width: 100px;
+		height: 100px;
+		background: #e9ddc7;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -9; 
+    	}
+        .ear21 {
+    	position:absolute; 
+        left: 927px; 
+        bottom: 170px;
+		width: 100px;
+		height: 100px;
+		background: #e9ddc7;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -9; 
+    	}
+        .hair11 {
+            position:absolute; 
+        left: 764px; 
+        bottom: 296px;
+        width: 265px;
+        height: 160px;
+        background-color: #1A3663;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 8px solid #1A3663;
+        border-bottom: 10;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        z-index: -2; 
+        transform: rotate(20deg);
+        }
+        .hair21 {
+            position:absolute; 
+        left: 650px; 
+        bottom: 300px;
+        width: 270px;
+        height: 150px;
+        background-color: #1A3663;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 8px solid #1A3663;
+        border-bottom: 10;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        z-index: -2; 
+        transform: rotate(-29deg);
+        }
+        .hair31 {
+            position:absolute; 
+        left: 677px; 
+        bottom: 40px;
+        width: 330px;
+        height: 330px;
+        background-color: #1A3663;
+        border-top-left-radius: 110px;
+        border-top-right-radius: 110px;
+        border: 8px solid #1A3663;
+        border-bottom: 10;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        z-index: -10; 
+        transform: rotate(180deg);
+        }
+
+        .glasses11 {
+    	position:absolute; 
+        left: 695px; 
+        bottom: 200px;
+		width: 100px;
+		height: 100px;
+		background: #9ACEFF;
+        border: 13px solid #F67676;
+		border-radius: 20%;
+		z-index: -1; 
+    	}
+        .glasses21 {
+    	position:absolute; 
+        left: 868px; 
+        bottom: 200px;
+		width: 100px;
+		height: 100px;
+		background: #9ACEFF;
+        border: 13px solid #F67676;
+		border-radius: 20%;
+		z-index: -1; 
+    	}
+        .glasses31 {
+    	position:absolute; 
+        left: 810px; 
+        bottom: 250px;
+		width: 60px;
+		height: 20px;
+		background: #F67676;
+		border-radius: 10%;
+    	}
+        .smile1 {
+        position:absolute; 
+        left: 792px; 
+        bottom: 130px;
+        width: 100px;
+        height: 50px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+        border: 10px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        transform: rotate(180deg);
+    	}
+        .nose1 {
+    	position:absolute; 
+        left: 836px; 
+        bottom: 205px;
+		width: 15px;
+		height: 30px;
+		background: #61FF83;
+		border-radius: 29%;
+		z-index: -1; 
+    	}
+        .body1 {
+        position:absolute; 
+        left: 624px; 
+        bottom: 0px;
+        width: 430px;
+        height: 80px;
+        background-color: #e9ddc7;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border: 8px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+}
+.body1 {
+        position:absolute; 
+        left: 624px; 
+        bottom: 0px;
+        width: 430px;
+        height: 80px;
+        background-color:#e9ddc7;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border: 8px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+}
+.body2 {
+        position:absolute; 
+        left: 694px; 
+        bottom: 0px;
+        width: 20px;
+        height: 90px;
+        background-color: #61FF83;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border: 8px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        z-index: 1;
+}
+.body3 {
+    position:absolute; 
+        left: 964px; 
+        bottom: 0px;
+        width: 20px;
+        height: 90px;
+        background-color: #61FF83;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border: 8px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        z-index: 1;
+}
+
+
+.head2 {
+    	position:absolute; 
+        left: 1165px; 
+        bottom: 80px;
+		width: 300px;
+		height: 270px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -8; 
+    	}
+        .neck2 {
+    	position:absolute; 
+        left: 1273px; 
+        bottom: 60px;
+		width: 80px;
+		height: 100px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 10%;
+		z-index: -9; 
+    	}
+        .ear12 {
+    	position:absolute; 
+        left: 1060px; 
+        bottom: 170px;
+		width: 140px;
+		height: 100px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -9; 
+        transform: rotate(-30deg);
+    	}
+        .ear22 {
+    	position:absolute; 
+        left: 1437px; 
+        bottom: 170px;
+		width: 140px;
+		height: 100px;
+		background: #FFFEE5;
+        border: 8px solid #1A3663;
+		border-radius: 50%;
+		z-index: -9; 
+        transform: rotate(30deg);
+    	}
+        .body21 {
+        position:absolute; 
+        left: 1124px; 
+        bottom: 0px;
+        width: 390px;
+        height: 100px;
+        background-color: #FFFEE5;
+        border-top-left-radius: 450px;
+        border-top-right-radius: 450px;
+        border: 8px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        z-index: -9; 
+}
+.smile2 {
+        position:absolute; 
+        left: 1267px; 
+        bottom: 130px;
+        width: 60px;
+        height: 30px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+        border: 10px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        transform: rotate(180deg);
+    	}
+        .smile21 {
+        position:absolute; 
+        left: 1320px; 
+        bottom: 130px;
+        width: 60px;
+        height: 30px;
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+        border: 10px solid #1A3663;
+        border-bottom: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0em;
+        margin-right: 6em;
+        transform: rotate(180deg);
+    	}
+        .nose2 {
+    	position:absolute; 
+        left: 1317px; 
+        bottom: 185px;
+		width: 15px;
+		height: 10px;
+		background: #1A3663;
+		border-radius: 29%;
+		z-index: -1; 
+    	}
+        .eye1 {
+    	position:absolute; 
+        left: 1233px; 
+        bottom: 215px;
+		width: 20px;
+		height: 30px;
+		background: #1A3663;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .eye2 {
+    	position:absolute; 
+        left: 1383px; 
+        bottom: 215px;
+		width: 20px;
+		height: 30px;
+		background: #1A3663;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+
+        .glasses12 {
+    	position:absolute; 
+        left: 1170px; 
+        bottom: 270px;
+		width: 120px;
+		height: 120px;
+		background: #9ACEFF;
+        border: 13px solid #61FF83;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .glasses22 {
+    	position:absolute; 
+        left: 1331px; 
+        bottom: 270px;
+		width: 120px;
+		height: 120px;
+		background: #9ACEFF;
+        border: 13px solid #61FF83;
+		border-radius: 50%;
+		z-index: -1; 
+    	}
+        .glasses32 {
+    	position:absolute; 
+        left: 1310px; 
+        bottom: 330px;
+		width: 26px;
+		height: 20px;
+		background: #61FF83;
+		border-radius: 10%;
+    	}
+        .glasses42 {
+    	position:absolute; 
+        left: 1160px; 
+        bottom: 280px;
+		width: 20px;
+		height: 45px;
+		background: #61FF83;
+		border-radius: 10%;
+        transform: rotate(30deg);
+        z-index: -10; 
+    	}
+        .glasses52 {
+    	position:absolute; 
+        left: 1465px; 
+        bottom: 280px;
+		width: 20px;
+		height: 45px;
+		background: #61FF83;
+		border-radius: 10%;
+        transform: rotate(-30deg);
+        z-index: -10; 
+    	}
+@media only screen 
+and (max-width : 768px) {
+    h1 {
+        font-size: 3em;
     }
-    .icecream2 {
-        height: 8.5em;
-        width: 8.5em;
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        border: 5px solid #1A3663;
-        margin-left:27px;
-        margin-top: 155px;
-    }
-    .cherry {
-        height: 1em;
-        width: 1em;
-        background-color: #F67676;
-        border-radius: 50%;
-        border: 5px solid #1A3663;
-        margin-left:60px;
-        margin-top: 0px;
-        position: absolute;
-    }
-    .inner-triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin-top: 105px;
-    margin-left: 58px;
-    border-left: 66px solid transparent;
-    border-right: 66px solid transparent;
-    border-bottom: 134px solid #ebdaa4;
-    border-radius: 48%;
-    transform: rotate(165deg);
 }
-.cone {
-    margin-top: 220px;
-    margin-left: 58px;
-}
-
-.ground {
-    max-width: 2000px;
-    height: 10em;
-    background-color: #ebdaa4;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border: 6px solid #1A3663;
-    border-bottom: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: 14em;
-}
-
-.umbrella {
-    width: 200px;
-    height: 120px;
-    background-color: #F67676;
-    border-top-left-radius: 110px;
-    border-top-right-radius: 110px;
-    border: 6px solid #1A3663;
-    border-bottom: 10;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: 0em;
-    margin-right: 6em;
-}
-.stem {
-  height: 100px;
-  width: 12px;
-  background-color: #1A3663;
-  margin:initial;
-  margin-left : 5.8em;
-
-}
-.onsand {
-    transform: rotate(15deg);
-    float:right;
-    margin-top: 1.5em;
-}
-
 </style>
     </head>
     <body>
     <div class="container">
-        <div class="cone">
-            <div class="cherry" ></div>
-            <div class="triangle-left"></div>
-            <div class="inner-triangle"></div>
-            <div class="cherry"></div>
-            <div class="icecream2"></div>
+        <div class="kid1">
+            <div class="head" ></div>
+            <div class="hair1"></div>
+            <div class="hair2"></div>
+            <div class="hair3"></div>
+            <div class="glasses1"></div>
+            <div class="glasses2"></div>
+            <div class="glasses3"></div>
+            <div class="smile"></div>
+            <div class="nose"></div>
+            <div class="ear1"></div>
+            <div class="ear2"></div>
+            <div class="neck"></div>
+            <div class="body"></div>
         </div>
-        <div style="text-align:center;">
-            <h1 style="margin-top:1.1em;">Welcome to the Beach</h1>
+        <div class="kid2">
+            <div class="head1" ></div>
+            <div class="hair11"></div>
+            <div class="hair21"></div>
+            <div class="hair31"></div>
+            <div class="glasses11"></div>
+            <div class="glasses21"></div>
+            <div class="glasses31"></div>
+            <div class="smile1"></div>
+            <div class="nose1"></div>
+            <div class="ear11"></div>
+            <div class="ear21"></div>
+            <div class="neck1"></div>
+            <div class="body1"></div>
+            <div class="body2"></div>
+            <div class="body3"></div>
+        </div>
+        <div class="dog">
+            <div class="head2"></div>
+            <div class="body21"></div>
+            <div class="ear12"></div>
+            <div class="ear22"></div>
+            <div class="neck2"></div>
+            <div class="body21"></div>
+            <div class="smile2"></div>
+            <div class="smile21"></div>
+            <div class="nose2"></div>
+            <div class="glasses12"></div>
+            <div class="glasses22"></div>
+            <div class="glasses32"></div>
+            <div class="glasses42"></div>
+            <div class="glasses52"></div>
+            <div class="eye1"></div>
+            <div class="eye2"></div>
+        </div>
+        <div>
+            <div class="sun"></div>
+            <div class="sun1"></div>
+            <div class="sun2"></div>
+            <div class="sun3"></div>
+            <div class="sun4"></div>
+            <div class="sun5"></div>
+        </div>
+        <div style="text-align:center;position:fixed;  top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);">
+            <h2 style="font-size: 4em;"><b>Meet some people and visit their spaces!</b></h2>
             <br>
-            <a href="index.html">   
-                <button id="Button"><h4>RETURN</h4></button> 
+            <a href="visit.html">   
+                <button id="Button"><h4>VISIT</h4></button> 
             </a>
         </div>
         <div class="onsand">

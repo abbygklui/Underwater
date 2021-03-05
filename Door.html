@@ -1,0 +1,71 @@
+@@ -0,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Ocean</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div>
+  <video id="video" class="video" src="Images/oceanvideo.mp4" autoplay noaudio preload></video>
+  </div>
+
+</body>
+<div class="container">
+  <h1 style="padding-top: 20%;z-index: -10;color: rgb(255, 255, 255);"> Scroll down and try moving and tapping the screen</h1>
+
+  <a href="index.html" >   
+    <button id="Button" style="padding-top: 0.5em; margin-bottom: 10%; margin-top: 10%;"><h4>Swim away</h4></button> 
+  </a>
+</div>
+
+
+
+<style>
+container {
+  position: fixed;
+  z-index: -2;
+}
+.video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+html {
+  height:100%;
+}
+body {
+  height: 4000px;
+}
+
+</style>
+<script>
+$(document).ready(function() {
+	$('body').ripples({
+			dropRadius: 20, 
+			perturbance: 0.21,
+			interactive: true,
+
+		});
+});
+
+</script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.ripples.js"></script>
+
+</html>
